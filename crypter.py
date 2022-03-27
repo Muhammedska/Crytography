@@ -1,13 +1,15 @@
 class Crypt:
     class vigenere:
         def crypte(text='', key=''):
+            text = text
+            key = key
             text.lower()
             key.lower()
             charReplist = [['i', 'ı'], ['ğ', 'g'],
                            ['ö', 'o'], ['ü', 'u'],
                            ['ş', 's'], [' ', '']]
             for i in charReplist:
-                print[i[0]]
+                
                 text.replace(i[0], i[1])
 
             charlist = "abcdefghıjklmnopqrstuvwxyz"
@@ -51,13 +53,15 @@ class Crypt:
                 output += charlist[i]
             return(output)
         def decrypte(text='', key=''):
+            text = text 
+            key = key
             text.lower()
             key.lower()
             charReplist = [['i', 'ı'], ['ğ', 'g'],
                            ['ö', 'o'], ['ü', 'u'],
                            ['ş', 's'], [' ', '']]
             for i in charReplist:
-                print[i]
+               
                 text.replace(i[0], i[1])
 
             charlist = "abcdefghıjklmnopqrstuvwxyz"
